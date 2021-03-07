@@ -1,0 +1,503 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio v5.0.8 (https://startbootstrap.com/themes/stylish-portfolio)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ */
+
+html {
+  width: 100%;
+  height: 100%;
+}
+.nav{
+  text-align: right;
+  font-size: 40px;
+}
+
+
+.navbar-brand {
+
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+body {
+  background-color: white;
+  
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.fas{
+  color: #88b77b;
+}
+
+.btn-xl {
+  padding: 0rem 2.5rem;
+}
+
+
+.content-section {
+  margin-top: 50px;  /* box azul serviços */
+  padding-bottom: 5.5rem;
+
+
+}
+
+.content-section-heading h2 {
+  font-size: 2.5rem; /* projetos recentes e o que oferecemos */
+}
+
+.bg-secondary {
+  background-color: #0b766b !important;
+}
+
+.content-section-heading h3 {
+  font-size: 1.5rem; /* serviços e portifólio*/
+  text-transform: uppercase;
+    padding-top: 40px;
+  color: white;
+}
+
+#mainNav{
+  background-color: #acc8ba;
+  text-align: right;
+   
+}
+
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1700px;
+}
+
+.li{
+  text-decoration-color: white;
+    font-size: 3rem;
+    text-align: left;
+ 
+}
+.a{
+  font-size: 4rem;
+}
+
+
+
+h1,
+h2{
+    color: black;  /* projetos recentes e o que oferecemos */
+    font-size: 40px;
+}
+h3,
+h4{
+  margin-top: 30px;
+  font-size: 35px;
+  color: #acc8ba;
+}
+h5,
+h6,
+
+p{
+  color: grey-dark;   /* endereço / telefone / copyright */
+  font-size: 25px;  /* copyright */
+}
+em{
+  color: grey;
+}
+
+.text-faded {
+  color: white;
+  font-size: 30px;   /* descrição pequena do que oferecemos */
+}
+
+/* Map */
+.map {
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  .map {
+    height: 50%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: white;
+  background: #08A79D;
+  line-height: 90px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+.masthead {
+
+  width: 100%;
+  height: 350px;
+  margin-top: 100px; 
+  padding-top: 50px; 
+  padding-left: 50px;
+  margin-bottom: 30px;
+
+
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 5;
+}
+
+.service-icon {                /* ÍTENS SERVIÇOS - REDONDOS */
+  background-color: #fff;
+  color: #1D809F;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 3rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 100;
+  font-size: 1.5rem;   /*Descrição pequena - portif[olio  */
+}
+
+@media (min-width: 500px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+
+
+
+#team{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+
+.team-member{
+  margin-top: 30px;
+}
+
+.map iframe {
+  height: 550px;
+  width: 100%;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+footer.footer {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+footer.footer .social-link {
+  display: block;
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  font-size: 2rem;
+  background-color: #08A79D;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+.text-muted{
+  text-align: center;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+a {
+  color: #1D809F;
+}
+
+a:hover, a:focus, a:active {
+  color: #155d74;
+}
+
+/*.btn-primary {
+  background-color: #1D809F !important;
+  border-color: #1D809F !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #155d74 !important;
+  border-color: #155d74 !important;
+}
+
+.btn-secondary {
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #fff !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
+}
+
+
+
+
+
+.text-primary {
+  color: #1D809F !important;
+}
+
+.text-secondary {
+  color: black !important;
+}
+*/
+
+.btn-dark {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: grey-dark;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  border: none;
+}
+
+
+
+footer.footer .social-link {
+  display: block;
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  font-size: 2rem;
+  background-color: #08A79D;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #acc8ba;
+  margin-top: 0px;
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 1rem;
+  margin: 0rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+
+
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3rem;
+  }
+  .product-item .product-item-img {
+    position: relative;
+    z-index: 0;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 1;
+    margin-top: -3rem;
+    max-width: 50vw;
+  }
+}
+
+.list-hours {
+  font-size: 1rem;
+}
+
+.list-hours .list-hours-item {
+  border-bottom: 1px solid #acc8ba;
+  padding-bottom: .25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.list-hours .list-hours-item.today {
+  font-weight: bold;
+  color: #e6a756;
+}
+
+@media (min-width: 992px) {
+  .list-hours {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+}
+
+.address strong {
+  font-size: 1.5rem;
+}

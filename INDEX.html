@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="Lissa Dias" content="">
+
+  <title>Cany D'orVet</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Jquery -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+  <script>
+    
+    $(function(){
+      $('#func > li').hover(
+        function(){
+          $(this).addClass('estilo');
+        },
+        function(){
+          $(this).removeClass('estilo');
+        });
+
+    
+
+    var newsArray = ["Equipe formada por veterinários formados e experientes.",
+        "Clívia e Bruno, proprietários da Vet que se tornou um suscesso. ", 
+        "Agora com nova parceria: trabalhando com a Santa Helena Vet."];
+
+      var newsLength = newsArray.length;
+
+      var newsInterval = 2000;
+
+      $('txtparent').after('<ul id="txt"></ul>');
+
+      for(i=0; i< newsLength; i++){
+        $('#txt').append('<li>' + newsArray[i] + '</li>');
+      }
+
+      function slideHeadLine(){
+        $('#txt li:last').clone().prependTo('#txt').css('display','none');
+
+        $('#txt li:first').fadeIn(1000).slideDown(500).css('margin-top','10px');
+
+        $('#txt li:last').remove();
+    }
+      setInterval(slideHeadLine, newsInterval);
+
+
+
+      $(function(){
+        $('.myButton').click(function(){
+          alert('Favor entrar em contato por: (63) 98400-8484 | 3214-3775').css('font-size','50px');
+        });   
+            });
+
+    });
+
+
+  </script>
+
+<style type="text/css">
+   .estilo{
+      background-color: #5F9EA0;
+      border-color: black;
+      color: white;
+         }
+
+  .myButton {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color:#ffffff;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#478f81;
+  font-family:Arial;
+  font-size:18px;
+  font-weight:bold;
+  padding:11px 42px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+  margin-top: 70px;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color:#f6f6f6;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body id="page-top">
+
+
+  <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png"><strong>Cany D'orVet</strong></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portifólio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Time</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Funcionamento">Funcionamento</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Mapa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+      <img class="displayed" src="img/banner.jpg"/>
+  </header>
+
+
+
+
+
+  <!-- About 
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Cany D'or Vet</h2>
+          <p class="lead mb-5">Sua clínica veterinária de confiança!</p>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+
+
+
+  <!-- Serviços -->
+  <section class="content-section bg-secondary text-white text-center" id="services">
+    <div id="principal" class="container">
+      <div class="content-section-heading">
+        <h3 class="mb-2">Serviços</h3>
+        <h2 class="mb-5">O que oferecemos</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-cat"></i>
+          </span>
+          <h4>
+            <strong>Vacinas</strong>
+          </h4>
+          <p class="text-faded mb-0">As vacinas que seu animal precisa.</p>
+          </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-dog"></i>
+          </span>
+          <h4>
+            <strong>Cirurgias</strong>
+          </h4>
+          <p class="text-faded mb-0">Castração e outras cirurgias.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-paw"></i>
+          </span>
+          <h4>
+            <strong>Consultas</strong>
+          </h4>
+          <p class="text-faded mb-0">Atendimento com carinho 
+            <i class="fas fa-heart"></i>
+            e respeito.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-fish"></i>
+          </span>
+          <h4>
+            <strong>Produtos pet</strong>
+          </h4>
+          <p class="text-faded mb-0">Banho e tosa, ração, brinquedos, etc.</p>
+       </div>
+     </div>
+      <a href="#" class="myButton">Clique para mais informações</a>
+      
+      <div id="mensagem" title="Mais Informações" style="display:none">
+    <p>Para maiores informações como valores, orçamentos, agendamento, promoções, etc<br> Entrar em contato por: (63) 98400-8484 | 3214-3775</p>
+    
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Callout 
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Welcome to
+        <em>your</em>
+        next website!</h2>
+      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/themes/stylish-portfolio/">Download Now!</a>
+    </div>
+  </section>-->
+
+
+
+
+
+  <!-- Portfolio -->
+  <section class="content-section text-center" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfólio</h3>
+        <h2 class="mb-5">Projetos Recentes</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Castração</div>
+                <p class="textinho mb-0"><strong>Acompanhe nossa campanha de castração de cães e gatos.</strong></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/castracao.jpg" alt="Castração">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Promoções</div>
+                <p class="textinho mb-0"><strong>Pacontes com desconto para banho e tosa tem benefícios especiais!!</strong></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/promocoes.jpg" alt="Promoções">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Atendimento</div>
+                <p class="textinho mb-0"><strong>Consultas com hora marcada pra melhorar sua comodidade.</strong></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/atendimento.jpg" alt="Atendimento">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Táxi Pet</div>
+                <p class="mb-0"><strong>Não pode trazer? Buscamos na sua residência.</strong></p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/taxipet.jpg" alt="Táxi Pet">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!-- Time-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nosso Time</h2>
+                    <h3 class="section-subheading text-muted">Venha nos fazer uma visita!!</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="img/clivia.jpg" alt="" />
+                            <h4>Clívia Nystron</h4>
+                            <p class="text-muted">Veterinária</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/clivianystrom/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/clivia.nystrom"><i class="fab fa-facebook-f"></i></a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="img/bruno.jpg" alt="" />
+                            <h4>Bruno Lima</h4>
+                            <p class="text-muted">Veterinário</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/cany_dorvet/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100017700997223"><i class="fab fa-facebook-f"></i></a>
+                      
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="img/familia.jpg" alt="" />
+                            <h4>Familia Cany D'orVet</h4>
+                            <p class="text-muted">Nossas funcionárias</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/cany_dorvet/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/canydor"><i class="fab fa-facebook-f"></i></a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div id="txtparent" class="row">
+                    <div id="txt" class="col-lg-8 mx-auto text-center"><p class="large text-muted"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+  <!-- Call to Action 
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
+      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
+    </div>
+  </section>-->
+
+<!-- Funcionamento-->
+<section class="page-section cta" id="Funcionamento">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-1">
+                <span class="section-heading-upper">Entre</span>
+                <span class="section-heading-lower">Estamos abertos</span>
+              </h2>
+
+
+              <ul id="func" class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex"><strong>     <br>Domingo</strong>
+                  <span class="ml-auto"><strong><br>Fechados</strong></span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Segunda
+                  <span class="ml-auto">7:00 AM to 18:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Terça
+                  <span class="ml-auto">7:00 AM to 18:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Quarta
+                  <span class="ml-auto">7:00 AM to 18:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Quinta
+                  <span class="ml-auto">7:00 AM to 18:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Sexta
+                  <span class="ml-auto">7:00 AM to 18:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Sábado
+                  <span class="ml-auto">9:00 AM to 18:00 PM</span>
+                </li>
+              </ul>
+              <p class="address mb-5">
+                <em>
+                  <strong>AV. TOCANTINS, SETOR SANTA FÉ, QUADRA 36</strong>
+                  <br>
+                  Taquaralto, Palmas - TO
+                </em>
+              </p>
+              <p class="mb-0">
+                
+                  <em>Ligue-nos</em>
+                
+                <br>
+                <strong>(63) 9 8400-8484 | 3214-3775</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  <!-- fecha Funcionamento-->
+
+
+
+
+
+  <!-- Mapa -->
+  <div id="contact" class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.0084245132716!2d-48.29475424930724!3d-10.341210392581491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b3bccc2e00b6f%3A0xbd069e4e4099376b!2sCANY%20D&#39;OR%20TAQUARALTO!5e0!3m2!1sen!2sus!4v1598812424946!5m2!1sen!2sus" width="800" height="750" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <br />
+  
+      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+
+  </div>  <!-- fecha Mapa -->
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/canydor">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/cany_dorvet/?hl=pt-br">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://g1.globo.com/to/tocantins/edicao/2020/07/17/videos-bom-dia-tocantins-de-sexta-feira-17-de-julho.ghtml">
+            <i class="icon-social-google"></i>
+          </a>
+        </li>
+
+        
+      </ul>
+      <p class="text-muted mb-0">Copyright &copy; Cany D'orVet 2020</p>
+    </div>
+  </footer>   <!-- fecha Footer -->
+
+
+
+
+  <!-- Scroll p/o topo - botão-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
